@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Athiti-Bold';
+    src: url('font/Athiti-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Athiti-SemiBold';
+    src: url('font/Athiti-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Athiti-Medium';
+    src: url('font/Athiti-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Athiti-Regular';
+    src: url('font/Athiti-Regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Athiti-SemiBold', sans-serif;
+}
+
+h2 {
+    font-family: 'Athiti-Medium', sans-serif;
+}
+
+h3, p, a, span {
+    font-family: 'Athiti-Medium', sans-serif;
+}
+
+.hamburger-menu,
+.page-title,
+.time-display {
+    font-family: 'Athiti-Bold', sans-serif;
+}
+
+.time-display {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #222222;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu {
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.download-button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.loading-icon {
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.box {
+    background-color: #000000;
+    border: 1px solid #3b3b3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: 75%;
+}
+
+.project-image {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+    filter: drop-shadow(0 0 5px);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff; /* Change to your desired color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* ซ่อน modal โดยค่าเริ่มต้น */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังที่มืด */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* ขนาดความกว้างของ modal */
+    max-width: 400px; /* ขนาดความกว้างสูงสุด */
+    border-radius: 5px; /* มุมกลม */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.modal-nav a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+.modal-nav a:hover {
+    color: #0056b3;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="icon" href="img/icon-myport.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <div class="page-title">About Me</div>
+            <div class="time-display" id="timeDisplay"></div>
+        </nav>
+    </header>
+    <div class="modal" id="menuModal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleMenu()">&times;</span>
+            <nav class="modal-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="certificate.html">Certificates</a>
+                <a href="activities.html">Activities</a>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h1>About Me</h1>
+            <div class="inner-box fade-up">
+                <p>Name : Phurinat Preedasuriyachai (Phum)</p>
+            </div>
+            <div class="inner-box fade-up">
+                <p>BirthDay : July 12, 2007</p>
+            </div>
+            <div class="inner-box fade-up">
+                <p>Age : 17</p>
+            </div>
+            <div class="inner-box fade-up">
+                <p>ISM<br>( Intensive Science And Math )</p>
+            </div>
+            <div class="inner-box fade-up">
+                <p>GPAX : 3.99</p>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>Contact</h2>
+            <div class="contact-item fade-up" onclick="copyToClipboard('088-082-2426')">
+                <img src="img/call-icon.png" alt="Call" class="contact-icon"> 
+                <span>088-082-2426</span>
+            </div>
+            <div class="contact-item fade-up" onclick="copyToClipboard('phurinat36515@gmail.com')">
+                <img src="img/gmail-icon.png" alt="Gmail" class="contact-icon"> 
+                <span>phurinat36515@gmail.com</span>
+            </div>
+            <div class="contact-item fade-up" onclick="copyToClipboard('no_namz')">
+                <img src="img/line-icon.png" alt="Line" class="contact-icon"> 
+                <span>no_namz</span>
+            </div>
+            <div class="contact-item fade-up">
+                <a href="https://www.facebook.com/phurinat.preedasuriyachai" target="_blank">
+                    <img src="img/facebook-icon.png" alt="Facebook" class="contact-icon"> 
+                    <span>Phurinat Preedasuriyachai(ภูมิ)</span>
+                </a>
+            </div>
+            <div class="contact-item fade-up">
+                <a href="https://www.instagram.com/p.phum_x" target="_blank">
+                    <img src="img/ig-icon.png" alt="Instagram" class="contact-icon"> 
+                    <span>p.phum_x</span>
+                </a>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>Basic Skills</h2>
+            <div class="skill fade-up">
+                <img src="img/html-icon.png" alt="HTML Icon" class="skill-icon">
+                <div class="progress-bar">
+                    <div class="progress" data-skill="75%"></div>
+                </div>
+            </div>
+            <div class="skill fade-up">
+                <img src="img/css-icon.png" alt="CSS Icon" class="skill-icon">
+                <div class="progress-bar">
+                    <div class="progress" data-skill="80%"></div>
+                </div>
+            </div>
+            <div class="skill fade-up">
+                <img src="img/js-icon.png" alt="JS Icon" class="skill-icon">
+                <div class="progress-bar">
+                    <div class="progress" data-skill="50%"></div>
+                </div>
+            </div>
+            <div class="skill fade-up">
+                <img src="img/python-icon.png" alt="Python Icon" class="skill-icon">
+                <div class="progress-bar">
+                    <div class="progress" data-skill="50%"></div>
+                </div>
+            </div>
+            <div class="skill fade-up">
+                <img src="img/canva-icon.png" alt="Canva Icon" class="skill-icon">
+                <div class="progress-bar">
+                    <div class="progress" data-skill="90%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>Sport Skills</h2>
+            <div class="skill fade-up">
+                <img src="img/badminton-icon.png" alt="Bad Icon" class="skill-icon">
+                <div class="progress-bar">
+                    <div class="progress" data-skill="90%"></div>
+                </div>
+            </div>
+            <div class="skill fade-up">
+                <img src="img/volley-icon.png" alt="volley Icon" class="skill-icon">
+                <div class="progress-bar">
+                    <div class="progress" data-skill="75%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>Motto</h2>
+            <div class="inner-box fade-up">
+                <p>“Every success is just the beginning of the journey and mistakes are experiences.
+                    which leads to success”</p>
+            </div>
+        </div><br>
+        <a href="project.html" class="about-button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">My Project</a><br><br><br>
+    </main>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress');
+            progressBars.forEach(progress => {
+                const skillValue = progress.getAttribute('data-skill');
+                progress.style.width = '0%';
+                setTimeout(() => {
+                    progress.style.width = skillValue;
+                }, 500); // เวลาที่ปรับเปลี่ยน
+            });
+
+            const fadeElements = document.querySelectorAll('.fade-up');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(`Copied: ${text}`);
+            });
+        }
+
+        function toggleMenu() {
+            const modal = document.getElementById('menuModal');
+            modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

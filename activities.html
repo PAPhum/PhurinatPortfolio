@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="icon" href="img/icon-myport.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="activities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <div class="page-title">Activity</div>
+            <div class="time-display" id="timeDisplay"></div>
+        </nav>
+    </header>
+    <div class="modal" id="menuModal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleMenu()">&times;</span>
+            <nav class="modal-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="certificate.html">Certificates</a>
+                <a href="activities.html">Activities</a>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>ITCAMP20 Onsite</h2>
+            <img src="img/Acti/1.png" alt="Project 1" class="project-image">
+            <p></p>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>KMITL INNOVATION EXPO 2023</h2>
+            <img src="img/Acti/2.png" alt="Project 2" class="project-image">
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>LAB</h2>
+            <img src="img/Acti/3.png" alt="Project 3" class="project-image">
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>รุ่นพี่ติวรุ่นน้อง</h2>
+            <img src="img/Acti/4.png" alt="Project 3" class="project-image">
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>แข่งขันแบดมินตัน</h2>
+            <img src="img/Acti/5.png" alt="Project 3" class="project-image">
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>บูทกรีกโยเกิร์ต</h2>
+            <img src="img/Acti/6.png" alt="Project 3" class="project-image">
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2>บูทแรงลอยตัว</h2>
+            <img src="img/Acti/7.png" alt="Project 3" class="project-image">
+        </div><br><br>
+        <a href="index.html" class="about-button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Home</a><br><br>
+    </main>
+    <footer>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">&copy; 2024 PhurinatPortfolio. All rights reserved.</p>
+    </footer>   
+    <br><br><br><br><br> 
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
